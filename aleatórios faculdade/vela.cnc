@@ -1,0 +1,229 @@
+N001     G90 G40 G21 G18
+
+N002     G00 X23 Z3 F450  
+
+	     (CALIBRANDO A VELA)
+N003     G01 Z-100 
+
+N004     G00 X 27
+N005     	 Z3
+N006     	 X21
+N007     G01 Z-100
+N008     G00 X27
+N009     	 Z3
+N010    	 X20
+N011     G01 Z-100
+
+	     (PRIMEIRA RAMPA)
+N012     G00 X27
+N013     	 Z3
+N014     	 X18
+N015     G01 Z-15
+N016     G00 X19 Z-14
+N017     	 Z3
+N018     	 X16
+N019     G01 Z-15
+N020     G00 X17 Z-14
+N021     	 Z3
+N022     	 X14
+N023     G01 Z-15
+N024     G00 X15 Z-14
+N025     	 Z3
+N026     	 X12
+N027     G01 Z-15
+N028     G00 X13 Z-14
+N029     	 Z3
+N030     	 X10
+N031     G01 Z-15
+N032     G00 X11 Z-14
+N033     	 Z3
+N034     	 X8
+N035     G01 Z-13
+N036     G00 X9 Z-12
+N037     	   Z3
+N038     	   X6
+N039     G01 Z-11
+N040     G00 X7 Z-10
+N041     	 Z3
+N042     	 X4
+N043     G01 Z-9
+N044     G00 X5 Z-8
+N045     	 Z3
+N046     	 X2
+N047     G01 Z-7
+N048     G00 X3 Z-6
+N049     	 Z3
+N050     	 X0
+N051     G01 Z-5
+N052     	 X10 Z-15
+N053     G00 Z-13
+N054     	 X2 Z-5
+N055     G01 X0
+N056     	 Z-5.5
+N057     	 X9.5 Z-15
+N058     	 X22
+	
+N059     G00 Z-27
+
+	     (PRIMEIR0 DESNIVEL)
+N060     G01 X18
+N061     	 Z-30
+N062     	 X20
+N063     	 Z-27
+N064     	 X16
+N065     	 Z-30
+N066     	 X18
+N067     	 Z-27
+N068     	 X15
+N069     	 Z-30
+N070     	 X20
+
+N071     G00 Z-25
+
+N072     G01 X18 Z-27
+
+N073     G00 X20 
+N074     	 Z-22
+	
+N075     G03 X15 Z-27 R5 (PRIMEIRA CURVA)
+
+N076     G00 X22
+N077     	 Z-37
+	
+	     (SEGUNDO DESNIVEL)
+N078     G01 X18
+N079     	 Z-40
+N080     	 X20
+N081     	 Z-37
+N082     	 X16
+N083     	 Z-40
+N084     	 X18
+N085     	 Z-37
+N086     	 X15
+N087     	 Z-40
+
+N088     G00 X22
+N089     	 Z-47
+
+	     (TERCEIRO DESNIVEL)
+N090     G01 X18
+N091     	 Z-50
+N092     	 X20
+N093     	 Z-47
+N094     	 X16
+N095     	 Z-50
+N096     	 X18
+N097     	 Z-47
+N098     	 X15
+N099     	 Z-50
+N100     	 X18
+N101     	 X20 Z-52
+ 
+N102     G00 Z-50
+N103     	 X15
+	
+N104     G03 X20 Z-55 R5 (SEGUNDA CURVA P1)
+
+N105     G00 X22 Z-62
+
+	     (QUARTO DESNIVEL )
+N106     G01 X18
+N107     	 Z-70
+N108     	 X20
+N109   	     Z-62
+N110     	 X16
+N111     	 Z-70
+N112     	 X18
+N113     	 Z-62
+N114   	     X15
+N115   	     Z-70
+
+N116     G00 X22
+N117     	 Z-60
+	
+N118     G01 X20
+N119   	     X18 Z-62
+
+N120     G00 X20
+N121     	 Z-57
+
+N122     G03 X15 Z-62 R5 (SEGUNDA CURVA P2)
+
+	     (DESNIVEL COM RAMPA)
+N123     G00 X21
+N124     	 Z-78
+N125     G01 X19
+N126     	 Z-89
+N127     	 X21
+N128     	 Z-79
+N129   	     X18
+N130   	     Z-88
+N131   	     X20
+N132   	     Z-80
+N133     	 X17
+N134     	 Z-87
+N135     	 X19
+N136     	 Z-81
+N137     	 X16
+N138     	 Z-86
+N139     	 X18
+N140     	 Z-82
+N141     	 X15
+N142     	 Z-85
+N143     	 X16
+N144     G00 X21
+N145     	 Z-77
+N146     G01 X20
+N147     	 X15 Z-82
+N148     	 Z-85
+N149     	 X20 Z-90
+	
+	
+	     (ULTIMO DESNIVEL)
+N150     G00 X21 Z-97
+N151     G01 X18
+N152     	 Z-100
+N153  	   X20
+N154     	 Z-97
+N155     	 X16
+N156     	 Z-100
+N157     	 X18
+N158     	 Z-97
+N159     	 X15
+N160     	 Z-100
+	
+N161     G00 X25
+N162     	 Z-5
+N163     	 X0
+
+	     (PERFILAMENTO)
+
+N164     G01 X10 Z-15
+N165     	 X20
+N166     	 Z-22
+N167     G03 X15 Z-27 R5
+N168     G01 Z-30
+N169     	 X20
+N170     	 Z-37
+N171     	 X15
+N172     	 Z-40
+N173     	 X20
+N174     	 Z-47
+N175     	 X15
+N176     	   Z-50
+N177     G03 X20 Z-55 R5
+N178     G01 Z-57
+N179     G03 X15 Z-62 R5
+N180     G01 Z-70
+N181     	 X20
+N182     	 Z-77
+N183     	 X15 Z-82
+N184     	 Z-85
+N185     	 X20 Z-90
+N186     	 Z-97
+N187     	 X15
+N188     	 Z-100
+N189     	 X22
+N190     G00 Z20
+
+N191     M30
