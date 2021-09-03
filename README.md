@@ -1,2 +1,2 @@
 # Codigo_testes
- exercícips e testes
+ exercícios e testes
